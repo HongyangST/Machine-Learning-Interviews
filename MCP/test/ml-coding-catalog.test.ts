@@ -7,7 +7,7 @@ const SOURCE_PATH = "src/MLC/ml-coding.md";
 const HEADER = `| Problem | Difficulty | Tags | Company tags | Answer | Interview focus |
 | --- | --- | --- | --- | --- | --- |`;
 const ROW =
-  "| k-nearest neighbors | Medium | distance, ranking | Uber, LinkedIn, Meta | [Python](answer.py) | Pairwise distances and top-k selection |";
+  "| k-nearest neighbors | ![Medium](../assets/difficulty-medium.svg) | distance, ranking | Uber, LinkedIn, Meta | [Python](answer.py) | Pairwise distances and top-k selection |";
 
 test("ML coding category headings preserve legacy problem IDs", () => {
   const legacy = extractProblems(
