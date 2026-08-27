@@ -1,3 +1,13 @@
+## AIMLInterviews 1:1 Coaching & Mock Interviews
+
+I now offer **1:1 AI/ML interview coaching & mock interviews** for AI/ML Engineers, Applied AI Scientists, Research Engineers, Research Scientists, AI Strategists, Engineering Managers, and senior AI leaders.
+
+Topics include technical interviews (AI/ML system design, GenAI & Agentic AI fundamentals, ML fundamentals, AI coding, and more), behavioral interviews, and leadership interviews.
+
+Learn more: [https://aimlinterviews.io](https://aimlinterviews.io)
+
+---
+
 <p align="center">
 <img width="720" src="src/imgs/cover.png">
 </p>
@@ -42,14 +52,6 @@ codex mcp add aimlinterviews -- npx -y aimlinterviews-mcp
 Clone this repository first, then run the command from the clone or set `AIMLINTERVIEWS_ROOT`. See the [MCP server guide](MCP/README.md) for configuration, tools, and development instructions.
 
 ## News
-
-I now offer **1:1 AI/ML interview coaching & mock interviews** for AI/ML Engineers, Applied AI Scientists, Research Engineers, Research Scientists, AI Strategists, Engineering Managers, and senior AI leaders.
-
-Topics include technical interviews (AI/ML system design, GenAI & Agentic AI fundamentals, ML fundamentals, AI coding, and more), behavioral interviews, and leadership interviews.
-
-Learn more: [https://aimlinterviews.io](https://aimlinterviews.io)
-
----
 
 :newspaper: This repository is now **AIMLInterviews**, updated for 2026 with expanded LLM, multimodal AI, post-training, and GenAI system-design content.
 
