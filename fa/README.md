@@ -17,7 +17,7 @@
 | مبانی ML | [`src/ml-fundamental.md`](src/ml-fundamental.md) | ترجمه‌شده |
 | طراحی سیستم ML | [`src/MLSD/ml-system-design.md`](src/MLSD/ml-system-design.md) | ترجمه‌شده |
 | مصاحبهٔ رفتاری | [`src/behavioral/behavior.md`](src/behavioral/behavior.md) | ترجمه‌شده |
-| منابع GenAI | [`src/genai-resources.md`](src/genai-resources.md) | ترجمه‌شده |
+| منابع هوش مصنوعی مولد | [`src/genai-resources.md`](src/genai-resources.md) | ترجمه‌شده |
 | مسائل PyTorch و مطالعه‌های موردی | — | برنامه‌ریزی‌شده |
 
 ## مشارکت در ترجمه

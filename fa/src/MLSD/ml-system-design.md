@@ -6,7 +6,7 @@
 | ۲. [نمونه سؤال‌های طراحی سیستم ML](#fa-sample-questions) |
 | ۳. [موضوع‌های طراحی سیستم ML](#fa-system-design-topics) |
 | ۴. [سیستم ML در شرکت‌های بزرگ فناوری](#fa-big-tech-ml) |
-| ۵. [طراحی سیستم Agentic AI](https://github.com/alirezadir/Agentic-AI-Systems.git) |
+| ۵. [طراحی سیستم هوش مصنوعی عامل‌محور](https://github.com/alirezadir/Agentic-AI-Systems.git) |
 
 ### طراحی سیستم ML برای production
 
@@ -209,9 +209,9 @@
 
 # <a id="fa-sample-questions"></a> ۲. نمونه سؤال‌های طراحی سیستم ML
 
-### سیستم‌های GenAI و LLM در سال ۲۰۲۶
+### سیستم‌های هوش مصنوعی مولد و LLM در سال ۲۰۲۶
 
-این موضوع‌ها بیشتر به‌صورت مرحله‌ای مستقل با نام GenAI/LLM system design مطرح می‌شوند. همان فرمول ۹ مرحله‌ای با نگاه GenAI کاربرد دارد. بخش [طراحی سیستم GenAI/LLM](#fa-genai-llm-system-design) و مخزن [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git) را ببینید.
+این موضوع‌ها بیشتر به‌صورت مرحله‌ای مستقل با نام طراحی سیستم هوش مصنوعی مولد و LLM مطرح می‌شوند. همان فرمول ۹ مرحله‌ای با نگاه هوش مصنوعی مولد کاربرد دارد. بخش [طراحی سیستم هوش مصنوعی مولد و LLM](#fa-genai-llm-system-design) و مخزن [سیستم‌های هوش مصنوعی عامل‌محور](https://github.com/alirezadir/Agentic-AI-Systems.git) را ببینید.
 
 - Q&A اسناد با RAG یا «گفت‌وگو با اسناد»
 - chatbot پشتیبانی مشتری مبتنی بر LLM با guardrail و انتقال به انسان
@@ -280,7 +280,7 @@
 
 - People You May Know
 
-### <a id="fa-genai-llm-system-design"></a> طراحی سیستم GenAI / LLM در سال ۲۰۲۶
+### <a id="fa-genai-llm-system-design"></a> طراحی سیستم هوش مصنوعی مولد / LLM در سال ۲۰۲۶
 
 این مهم‌ترین افزودهٔ مصاحبهٔ مدرن طراحی سیستم ML است. در سال ۲۰۲۶، «روش ارزیابی، طراحی سیستم جدید است». مصاحبه‌کننده بیش از diagram معماری به **هزینه، latency، guardrail و monitoring** توجه می‌کند. باید بدانید LLM کجا مفید است و کجا سیستم deterministic باید کنترل را در دست بگیرد.
 
@@ -290,8 +290,8 @@
   - ingestion: chunking و overlap، embedding model و vector DB/ANN مانند HNSW یا IVF-PQ
   - retrieval: dense یا hybrid با BM25، metadata filter، reranking با cross-encoder و query rewriting/HyDE
   - generation: prompt grounded، citation، بودجهٔ context window و مدیریت «پاسخی پیدا نشد»
-  - حالت پیشرفته: multi-hop یا agentic RAG، GraphRAG و cache برای prompt/embedding/semantic result
-- **سیستم agentic:** planning با ReAct یا plan-and-execute، tool/function calling، memory کوتاه‌مدت/بلندمدت، orchestration چند agent، recovery از loop و ابزار hallucinated و human-in-the-loop
+  - حالت پیشرفته: RAG چندمرحله‌ای یا عامل‌محور، GraphRAG و cache برای prompt/embedding/semantic result
+- **سیستم عامل‌محور:** planning با ReAct یا plan-and-execute، tool/function calling، memory کوتاه‌مدت/بلندمدت، orchestration چند عامل، recovery از loop و ابزار hallucinated و human-in-the-loop
 - **serving و scaling:** طراحی inference API، KV cache، continuous batching در vLLM، quantization، speculative decoding، routing میان مدل کوچک/بزرگ و trade-off self-host با API
 - **قابلیت اطمینان:** rate limit، retry، timeout، idempotency، fallback، queue، circuit breaker و graceful degradation
 - **guardrail و safety:** فیلتر ورودی/خروجی، دفاع در برابر prompt injection و jailbreak، حذف PII، بررسی grounding/hallucination، moderation و refusal

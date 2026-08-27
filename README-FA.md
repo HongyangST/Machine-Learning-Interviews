@@ -1,8 +1,8 @@
 ## کوچینگ خصوصی و مصاحبهٔ آزمایشی AIMLInterviews
 
-من برای مهندسان AI/ML، دانشمندان کاربردی AI، Research Engineerها، Research Scientistها، استراتژیست‌های AI، مدیران مهندسی و رهبران ارشد AI، **جلسه‌های خصوصی کوچینگ و مصاحبهٔ آزمایشی AI/ML** برگزار می‌کنم.
+من برای مهندسان AI/ML، دانشمندان کاربردی AI، مهندسان پژوهش، دانشمندان پژوهشی، استراتژیست‌های AI، مدیران مهندسی و رهبران ارشد AI، **جلسه‌های خصوصی کوچینگ و مصاحبهٔ آزمایشی AI/ML** برگزار می‌کنم.
 
-موضوع جلسه‌ها می‌تواند شامل طراحی سیستم AI/ML، مبانی GenAI و Agentic AI، مبانی ML، کدنویسی AI، مصاحبهٔ رفتاری و مصاحبهٔ رهبری باشد.
+موضوع جلسه‌ها می‌تواند شامل طراحی سیستم AI/ML، مبانی هوش مصنوعی مولد و هوش مصنوعی عامل‌محور، مبانی ML، کدنویسی AI، مصاحبهٔ رفتاری و مصاحبهٔ رهبری باشد.
 
 اطلاعات بیشتر: [https://aimlinterviews.io](https://aimlinterviews.io)
 
@@ -31,10 +31,10 @@
 | فصل ۱ | [کدنویسی عمومی ـ DSA (ساختمان داده و الگوریتم)](fa/src/lc-coding.md) |
 | فصل ۲ | [کدنویسی ML و داده](fa/src/MLC/ml-coding.md) |
 | فصل ۳ | [مبانی و گسترهٔ ML؛ از ML کلاسیک تا LLM و هوش مصنوعی چندوجهی](fa/src/ml-fundamental.md) |
-| فصل ۴ | [طراحی سیستم ML / GenAI / LLM](fa/src/MLSD/ml-system-design.md) |
-| فصل ۵ | [سیستم‌های Agentic AI](https://github.com/alirezadir/Agentic-AI-Systems.git) |
+| فصل ۴ | [طراحی سیستم ML / هوش مصنوعی مولد / LLM](fa/src/MLSD/ml-system-design.md) |
+| فصل ۵ | [سیستم‌های هوش مصنوعی عامل‌محور](https://github.com/alirezadir/Agentic-AI-Systems.git) |
 | فصل ۶ | [مصاحبه‌های رفتاری](fa/src/behavioral/behavior.md) · [فایل تمرین در Google Sheets](https://docs.google.com/spreadsheets/d/1W8H2DMzetOt2BxCTmENOgdfBS84Kf_mbXIHLF2-sP-M/edit?gid=244760119#gid=244760119) · [دانلود Excel](src/behavioral/Behavioral%20%26%20Leadership%20Interview%20Prep%20Template.xlsx) |
-| منابع | [منابع یادگیری GenAI](fa/src/genai-resources.md) |
+| منابع | [منابع یادگیری هوش مصنوعی مولد](fa/src/genai-resources.md) |
 | مربی AI | [سرور MCP پروژهٔ AIMLInterviews](MCP/README.md) |
 
 ## مربی مصاحبه با MCP
@@ -51,12 +51,12 @@ codex mcp add aimlinterviews -- npx -y aimlinterviews-mcp
 
 ## تازه‌ها
 
-:newspaper: نام این مخزن اکنون **AIMLInterviews** است. نسخهٔ ۲۰۲۶ با مطالب گسترده‌تر دربارهٔ LLM، هوش مصنوعی چندوجهی، post-training و طراحی سیستم GenAI به‌روزرسانی شده است.
+:newspaper: نام این مخزن اکنون **AIMLInterviews** است. نسخهٔ ۲۰۲۶ با مطالب گسترده‌تر دربارهٔ LLM، هوش مصنوعی چندوجهی، post-training و طراحی سیستم هوش مصنوعی مولد به‌روزرسانی شده است.
 
 **نکته‌ها:**
 
 - ساختار مصاحبه‌های AI و ML در همهٔ شرکت‌ها یکسان نیست، اما مراحل اصلی در شرکت‌های FAANG شباهت زیادی دارند. مصاحبهٔ استارتاپ‌ها معمولاً به کاربردها و مسئله‌های همان شرکت نزدیک‌تر است، در حالی که شرکت‌های بزرگ ساختار باثبات‌تری دارند.
-- تمرکز اصلی این راهنما نقش‌های AI/ML Engineering، Applied Science و Tech Lead در شرکت‌های بزرگ است. ساختار مصاحبه برای نقش‌هایی مانند Data Science یا Research Scientist متفاوت است، اما بخشی از فصل‌های این راهنما همچنان برای آن‌ها مفید خواهد بود.
+- تمرکز اصلی این راهنما نقش‌های AI/ML Engineering، Applied Science و Tech Lead در شرکت‌های بزرگ است. ساختار مصاحبه برای نقش‌هایی مانند Data Science یا دانشمند پژوهشی متفاوت است، اما بخشی از فصل‌های این راهنما همچنان برای آن‌ها مفید خواهد بود.
 
 # مشارکت
 

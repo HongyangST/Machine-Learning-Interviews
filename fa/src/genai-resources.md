@@ -1,12 +1,12 @@
-# منابع یادگیری GenAI
+# منابع یادگیری هوش مصنوعی مولد
 
-این صفحه منابع تکمیلی برای LLM، هوش مصنوعی چندوجهی، RAG، Agentic AI و طراحی سیستم GenAI را گردآوری می‌کند. این موضوع‌ها در [مبانی ML](./ml-fundamental.md) و [طراحی سیستم ML](./MLSD/ml-system-design.md) بررسی می‌شوند.
+این صفحه منابع تکمیلی برای LLM، هوش مصنوعی چندوجهی، RAG، هوش مصنوعی عامل‌محور و طراحی سیستم هوش مصنوعی مولد را گردآوری می‌کند. این موضوع‌ها در [مبانی ML](./ml-fundamental.md) و [طراحی سیستم ML](./MLSD/ml-system-design.md) بررسی می‌شوند.
 
 ## Educative.io
 
 به‌جای تمام‌کردن همهٔ دوره‌ها، منبعی را انتخاب کنید که دقیقاً شکاف دانشی شما را پوشش می‌دهد.
 
-### مبانی GenAI و LLM
+### مبانی هوش مصنوعی مولد و LLM
 
 - [Generative AI Handbook](https://www.educative.io/courses/generative-ai-handbook) — معرفی کوتاه LLM، prompting، fine-tuning، پایگاه دادهٔ برداری، RAG، مدل‌های diffusion و agentها.
 - [LLM Bootcamp](https://www.educative.io/courses/llm-bootcamp) — مسیر عمیق‌تر دربارهٔ Transformer، embedding، پایگاه دادهٔ برداری، fine-tuning، LoRA/QLoRA، RAG، ارزیابی و trade-offهای production.
@@ -18,10 +18,10 @@
 - [Advanced RAG Techniques](https://www.educative.io/courses/advanced-rag-techniques) — تمرکز بر کیفیت بازیابی و پیکربندی‌های پیشرفته‌تر RAG.
 - [LLMOps](https://www.educative.io/courses/llmops) — ارزیابی، observability، feedback loop، قابلیت اطمینان، scaling، latency و هزینه در سیستم‌های LLM production.
 
-### agentها و سیستم‌های Agentic
+### عامل‌ها و سیستم‌های عامل‌محور
 
-- [Agentic AI Systems](https://www.educative.io/courses/agentic-ai-systems) — معماری agent و تصمیم‌های طراحی سیستم برای workflowهای خودکار.
-- [Agentic Design Patterns](https://www.educative.io/courses/agentic-design-patterns) — ابزار، retrieval، حافظه، routing و evaluator به‌عنوان اجزای سازندهٔ agent.
+- [سیستم‌های هوش مصنوعی عامل‌محور](https://www.educative.io/courses/agentic-ai-systems) — معماری عامل و تصمیم‌های طراحی سیستم برای workflowهای خودکار.
+- [الگوهای طراحی عامل‌محور](https://www.educative.io/courses/agentic-design-patterns) — ابزار، retrieval، حافظه، routing و evaluator به‌عنوان اجزای سازندهٔ عامل.
 - [Build AI Agents and Multi-Agent Systems with CrewAI](https://www.educative.io/courses/build-ai-agents-and-multi-agent-systems-with-crewai) — مقدمه‌ای عملی برای workflowهای تک‌عاملی و چندعاملی.
 
 ### آمادگی مصاحبه و طراحی سیستم
@@ -32,5 +32,5 @@
 
 ## مخزن‌های تکمیلی
 
-- [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems) — یادداشت‌های طراحی سیستم، مثال‌های پیاده‌سازی و آمادگی مصاحبه برای Agentic AI.
+- [سیستم‌های هوش مصنوعی عامل‌محور](https://github.com/alirezadir/Agentic-AI-Systems) — یادداشت‌های طراحی سیستم، مثال‌های پیاده‌سازی و آمادگی مصاحبه برای هوش مصنوعی عامل‌محور.
 - [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning) — مطالب production ML و طراحی سیستم یادگیری عمیق.

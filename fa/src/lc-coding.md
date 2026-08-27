@@ -87,4 +87,4 @@
 - [Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-interview)
 - [Grokking the Machine Learning System Design Interview](https://www.educative.io/courses/grokking-the-machine-learning-system-design-interview)
 
-برای دوره‌های LLM، RAG، Agentic AI و طراحی سیستم GenAI، [منابع یادگیری GenAI](./genai-resources.md) را ببینید.
+برای دوره‌های LLM، RAG، هوش مصنوعی عامل‌محور و طراحی سیستم هوش مصنوعی مولد، [منابع یادگیری هوش مصنوعی مولد](./genai-resources.md) را ببینید.

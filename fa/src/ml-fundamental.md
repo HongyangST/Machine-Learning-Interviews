@@ -153,7 +153,7 @@
 
 ## ۵. مدل‌های پایه و مدل‌های زبانی بزرگ
 
-> تغییر مهم مصاحبه‌های ML در سال ۲۰۲۶ این است که LLM و foundation model دیگر یک تخصص جانبی نیستند و بخشی از breadth مورد انتظار محسوب می‌شوند. برای طراحی سرتاسری سیستم GenAI، شامل RAG، agent و serving، [فصل ۴](./MLSD/ml-system-design.md) و مخزن [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git) را ببینید.
+> تغییر مهم مصاحبه‌های ML در سال ۲۰۲۶ این است که LLM و foundation model دیگر یک تخصص جانبی نیستند و بخشی از breadth مورد انتظار محسوب می‌شوند. برای طراحی سرتاسری سیستم هوش مصنوعی مولد، شامل RAG، عامل هوشمند و serving، [فصل ۴](./MLSD/ml-system-design.md) و مخزن [سیستم‌های هوش مصنوعی عامل‌محور](https://github.com/alirezadir/Agentic-AI-Systems.git) را ببینید.
 
 ### درون Transformer و LLM
 
@@ -281,7 +281,7 @@
 - یادگیری انتقالی چیست و در عمل چگونه استفاده می‌شود؟
 - [۴۵ سؤال مصاحبهٔ ML](https://www.simplilearn.com/tutorials/machine-learning-tutorial/machine-learning-interview-questions)
 
-### نمونه سؤال‌های LLM، GenAI و multimodal در سال ۲۰۲۶
+### نمونه سؤال‌های LLM، هوش مصنوعی مولد و multimodal در سال ۲۰۲۶
 
 - یک block ترنسفورمر را مرحله‌به‌مرحله توضیح دهید. چرا scoreهای attention بر `√dₖ` تقسیم می‌شوند؟
 - KV cache چیست، چرا برای inference مهم است و حافظهٔ آن چگونه scale می‌شود؟

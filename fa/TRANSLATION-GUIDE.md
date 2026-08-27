@@ -35,7 +35,7 @@
 | artificial intelligence | هوش مصنوعی (AI) | پس از معرفی می‌توان `AI` نوشت. |
 | machine learning | یادگیری ماشین (ML) | «یادگیری ماشینی» استفاده نشود. |
 | deep learning | یادگیری عمیق | در صورت نیاز `Deep Learning` در نخستین کاربرد. |
-| generative AI | هوش مصنوعی مولد (GenAI) | `GenAI` در متن فنی قابل استفاده است. |
+| generative AI | هوش مصنوعی مولد | در نثر فارسی به‌جای `GenAI` استفاده شود. |
 | foundation model | مدل پایه (foundation model) | با «مدل مبنا» جابه‌جا نشود. |
 | large language model | مدل زبانی بزرگ (LLM) | acronym پس از معرفی حفظ شود. |
 | multimodal model | مدل چندوجهی | multimodal در نخستین کاربرد بیاید. |
@@ -91,7 +91,7 @@
 | computer vision | بینایی کامپیوتر (CV) | از «بینایی رایانه» فقط در بافت دانشگاهی هماهنگ استفاده شود. |
 | natural language processing | پردازش زبان طبیعی (NLP) | acronym پس از معرفی. |
 | agent | عامل هوشمند (`AI agent`) | در متن عملی می‌توان `agent` را حفظ کرد. |
-| agentic AI | Agentic AI / سیستم‌های عامل‌محور | یک برابر اجباری در همهٔ جمله‌ها تحمیل نشود. |
+| agentic AI | هوش مصنوعی عامل‌محور | برای `agentic system` از «سیستم عامل‌محور» استفاده شود. |
 | system design | طراحی سیستم | `ML system design`: طراحی سیستم ML. |
 | scalability | مقیاس‌پذیری | `scaling`: مقیاس‌دهی. |
 | latency | تأخیر (`latency`) | در نخستین کاربرد انگلیسی اضافه شود. |
