@@ -4,8 +4,8 @@ ML 编码面试因公司而异。有些更关注从零实现经典算法，另�
 
 ## 如何使用本章
 
-- 将 [`solutions/ml_algorithms.py`](./solutions/ml_algorithms.py) 作为核心面试题的权威、可执行 NumPy 参考实现。
-- 运行 [`solutions/test_ml_algorithms.py`](./solutions/test_ml_algorithms.py) 来验证实现，并学习一些有价值的边界情况。
+- 打开每道题目所链接的答案；每道权威题目都在英文主目录的 [`problems/`](../../../src/MLC/problems/) 下拥有独立、可执行的 Python 文件。
+- 运行 [`tests/test_problem_answers.py`](../../../src/MLC/tests/test_problem_answers.py) 来验证实现，并学习一些有价值的边界情况。
 - 将较早的 [notebooks](./notebooks/) 用作补充性的探索材料。其中一些早于权威解法，可能不够完整。
 - 练习在不看参考实现的情况下写出每个重点题目，然后对比正确性、复杂度和边界情况处理。
 
@@ -24,7 +24,7 @@ ML 编码面试因公司而异。有些更关注从零实现经典算法，另�
 在仓库根目录运行参考测试：
 
 ```bash
-uv run --with numpy python src/MLC/solutions/test_ml_algorithms.py
+uv run --with numpy python -m unittest discover -s src/MLC/tests -p "test_*.py"
 ```
 
 ## PyTorch ML 编码
@@ -44,20 +44,20 @@ uv run --with numpy python src/MLC/solutions/test_ml_algorithms.py
 
 | 题目 | 难度 | 公司标签 | 权威解法 | 补充 notebook | 一个优秀解法应覆盖的内容 |
 | --- | --- | --- | --- | --- | --- |
-| 数值稳定的 softmax 和交叉熵 | 简单（Easy） | Apple, Meta, Google, Amazon | `softmax`, `cross_entropy_from_logits` | — | 最大值平移、log-sum-exp、shape、类别索引校验 |
-| 使用梯度下降的线性回归 | 中等（Medium） | — | `linear_regression_gradient_descent` | [Linear regression](./notebooks/linear_regression_md.ipynb) | 向量化梯度、偏置项、MSE 缩放、收敛性 |
-| 使用梯度下降的逻辑回归 | 困难（Hard） | Google, Meta, Amazon | `logistic_regression_gradient_descent` | [Logistic regression](./notebooks/logistic_regression_md.ipynb) | 稳定的 sigmoid、二元交叉熵梯度、阈值 |
-| k 最近邻 | 中等（Medium） | Uber, LinkedIn, Meta | `knn_predict` | [k-NN](./notebooks/k_nearest_neighbors.ipynb) | 成对距离、top-k 选择、平票处理、复杂度 |
-| k-means 聚类 | 中等（Medium） | Uber, LinkedIn, Google, Amazon | `kmeans` | [k-means](./notebooks/k_means_2.ipynb) | 初始化、向量化分配、收敛、空簇 |
-| 决策树划分 | 中等（Medium） | — | `gini_impurity`, `best_gini_split` | [Decision tree](./notebooks/decision_tree.ipynb) | 候选阈值、加权不纯度、停止条件 |
-| 主成分分析 | 中等（Medium） | — | `principal_component_analysis` | — | 中心化、SVD/特征分解、主成分排序、方差 |
-| 二维卷积 | 中等（Medium） | — | `conv2d_valid` | [Convolution](./notebooks/convolution.ipynb) | 输出 shape、步幅、互相关与卷积的区别 |
-| 缩放点积注意力 | 中等（Medium） | — | `scaled_dot_product_attention` | — | Q/K/V 的 shape、`1/sqrt(d_k)`、在稳定 softmax 前做 mask |
-| 二分类指标与 ROC-AUC | 中等（Medium） | — | `binary_classification_metrics`, `roc_auc` | — | 分母为零、类别不平衡、平票、排序解释 |
-| 蓄水池抽样 | 中等（Medium） | — | `reservoir_sample` | — | 流长度未知、均匀概率、O(k) 内存 |
-| TF-IDF | 中等（Medium） | — | `tfidf` | — | token 计数、文档频率、平滑、稀疏缩放 |
+| 数值稳定的 softmax 和交叉熵 | 简单（Easy） | Apple, Meta, Google, Amazon | [Python 解答](../../../src/MLC/problems/classic_ml/softmax_cross_entropy.py) | — | 最大值平移、log-sum-exp、shape、类别索引校验 |
+| 使用梯度下降的线性回归 | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/classic_ml/linear_regression.py) | [Linear regression](./notebooks/linear_regression_md.ipynb) | 向量化梯度、偏置项、MSE 缩放、收敛性 |
+| 使用梯度下降的逻辑回归 | 困难（Hard） | Google, Meta, Amazon | [Python 解答](../../../src/MLC/problems/classic_ml/logistic_regression.py) | [Logistic regression](./notebooks/logistic_regression_md.ipynb) | 稳定的 sigmoid、二元交叉熵梯度、阈值 |
+| k 最近邻 | 中等（Medium） | Uber, LinkedIn, Meta | [Python 解答](../../../src/MLC/problems/classic_ml/knn.py) | [k-NN](./notebooks/k_nearest_neighbors.ipynb) | 成对距离、top-k 选择、平票处理、复杂度 |
+| k-means 聚类 | 中等（Medium） | Uber, LinkedIn, Google, Amazon | [Python 解答](../../../src/MLC/problems/classic_ml/kmeans.py) | [k-means](./notebooks/k_means_2.ipynb) | 初始化、向量化分配、收敛、空簇 |
+| 决策树划分 | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/classic_ml/decision_tree_split.py) | [Decision tree](./notebooks/decision_tree.ipynb) | 候选阈值、加权不纯度、停止条件 |
+| 主成分分析 | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/classic_ml/pca.py) | — | 中心化、SVD/特征分解、主成分排序、方差 |
+| 二维卷积 | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/classic_ml/conv2d.py) | [Convolution](./notebooks/convolution.ipynb) | 输出 shape、步幅、互相关与卷积的区别 |
+| 缩放点积注意力 | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/language_models/scaled_dot_product_attention.py) | — | Q/K/V 的 shape、`1/sqrt(d_k)`、在稳定 softmax 前做 mask |
+| 二分类指标与 ROC-AUC | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/classic_ml/binary_metrics_roc_auc.py) | — | 分母为零、类别不平衡、平票、排序解释 |
+| 蓄水池抽样 | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/classic_ml/reservoir_sampling.py) | — | 流长度未知、均匀概率、O(k) 内存 |
+| TF-IDF | 中等（Medium） | — | [Python 解答](../../../src/MLC/problems/language_models/tfidf.py) | — | token 计数、文档频率、平滑、稀疏缩放 |
 
-所有权威函数都在 [`solutions/ml_algorithms.py`](./solutions/ml_algorithms.py) 中。
+每道权威题目都在 [`problems/`](../../../src/MLC/problems/) 下拥有独立答案文件。
 
 ## 其他经典算法
 

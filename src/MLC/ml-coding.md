@@ -4,8 +4,8 @@ ML coding rounds vary by company. Some focus on implementing classical algorithm
 
 ## How to use this chapter
 
-- Use [`solutions/ml_algorithms.py`](./solutions/ml_algorithms.py) as the canonical, executable NumPy reference for core interview problems.
-- Run [`solutions/test_ml_algorithms.py`](./solutions/test_ml_algorithms.py) to verify the implementations and study useful edge cases.
+- Open the answer linked from each question; every canonical problem has its own executable Python file under [`problems/`](./problems/).
+- Run [`tests/test_problem_answers.py`](./tests/test_problem_answers.py) to verify the implementations and study useful edge cases.
 - Use the older [notebooks](./notebooks/) as supplementary, exploratory material. Some predate the canonical solutions and may be less complete.
 - Practice writing each priority problem without looking at the reference, then compare correctness, complexity, and edge-case handling.
 
@@ -24,7 +24,7 @@ Company tags are added only when a reference associates a company with the same 
 Run the reference tests from the repository root:
 
 ```bash
-uv run --with numpy python src/MLC/solutions/test_ml_algorithms.py
+uv run --with numpy python -m unittest discover -s src/MLC/tests -p "test_*.py"
 ```
 
 ## PyTorch ML Coding
@@ -44,20 +44,20 @@ The following set combines classic questions that remain common with modern prim
 
 | Problem | Difficulty | Company tags | Canonical solution | Supplemental notebook | What a strong solution should cover |
 | --- | --- | --- | --- | --- | --- |
-| Numerically stable softmax and cross-entropy | Easy | Apple, Meta, Google, Amazon | `softmax`, `cross_entropy_from_logits` | — | Max subtraction, log-sum-exp, shapes, class-index validation |
-| Linear regression with gradient descent | Medium | — | `linear_regression_gradient_descent` | [Linear regression](./notebooks/linear_regression_md.ipynb) | Vectorized gradients, bias, MSE scaling, convergence |
-| Logistic regression with gradient descent | Hard | Google, Meta, Amazon | `logistic_regression_gradient_descent` | [Logistic regression](./notebooks/logistic_regression_md.ipynb) | Stable sigmoid, binary cross-entropy gradient, thresholds |
-| k-nearest neighbors | Medium | Uber, LinkedIn, Meta | `knn_predict` | [k-NN](./notebooks/k_nearest_neighbors.ipynb) | Pairwise distances, top-k selection, ties, complexity |
-| k-means clustering | Medium | Uber, LinkedIn, Google, Amazon | `kmeans` | [k-means](./notebooks/k_means_2.ipynb) | Initialization, vectorized assignment, convergence, empty clusters |
-| Decision-tree split | Medium | — | `gini_impurity`, `best_gini_split` | [Decision tree](./notebooks/decision_tree.ipynb) | Candidate thresholds, weighted impurity, stopping conditions |
-| Principal component analysis | Medium | — | `principal_component_analysis` | — | Centering, SVD/eigendecomposition, component ordering, variance |
-| 2D convolution | Medium | — | `conv2d_valid` | [Convolution](./notebooks/convolution.ipynb) | Output shape, stride, cross-correlation vs convolution |
-| Scaled dot-product attention | Medium | — | `scaled_dot_product_attention` | — | Q/K/V shapes, `1/sqrt(d_k)`, masking before stable softmax |
-| Binary metrics and ROC-AUC | Medium | — | `binary_classification_metrics`, `roc_auc` | — | Zero denominators, class imbalance, ties, rank interpretation |
-| Reservoir sampling | Medium | — | `reservoir_sample` | — | Unknown stream length, uniform probability, O(k) memory |
-| TF-IDF | Medium | — | `tfidf` | — | Token counts, document frequency, smoothing, sparse scaling |
+| Numerically stable softmax and cross-entropy | Easy | Apple, Meta, Google, Amazon | [Python answer](./problems/classic_ml/softmax_cross_entropy.py) | — | Max subtraction, log-sum-exp, shapes, class-index validation |
+| Linear regression with gradient descent | Medium | — | [Python answer](./problems/classic_ml/linear_regression.py) | [Linear regression](./notebooks/linear_regression_md.ipynb) | Vectorized gradients, bias, MSE scaling, convergence |
+| Logistic regression with gradient descent | Hard | Google, Meta, Amazon | [Python answer](./problems/classic_ml/logistic_regression.py) | [Logistic regression](./notebooks/logistic_regression_md.ipynb) | Stable sigmoid, binary cross-entropy gradient, thresholds |
+| k-nearest neighbors | Medium | Uber, LinkedIn, Meta | [Python answer](./problems/classic_ml/knn.py) | [k-NN](./notebooks/k_nearest_neighbors.ipynb) | Pairwise distances, top-k selection, ties, complexity |
+| k-means clustering | Medium | Uber, LinkedIn, Google, Amazon | [Python answer](./problems/classic_ml/kmeans.py) | [k-means](./notebooks/k_means_2.ipynb) | Initialization, vectorized assignment, convergence, empty clusters |
+| Decision-tree split | Medium | — | [Python answer](./problems/classic_ml/decision_tree_split.py) | [Decision tree](./notebooks/decision_tree.ipynb) | Candidate thresholds, weighted impurity, stopping conditions |
+| Principal component analysis | Medium | — | [Python answer](./problems/classic_ml/pca.py) | — | Centering, SVD/eigendecomposition, component ordering, variance |
+| 2D convolution | Medium | — | [Python answer](./problems/classic_ml/conv2d.py) | [Convolution](./notebooks/convolution.ipynb) | Output shape, stride, cross-correlation vs convolution |
+| Scaled dot-product attention | Medium | — | [Python answer](./problems/language_models/scaled_dot_product_attention.py) | — | Q/K/V shapes, `1/sqrt(d_k)`, masking before stable softmax |
+| Binary metrics and ROC-AUC | Medium | — | [Python answer](./problems/classic_ml/binary_metrics_roc_auc.py) | — | Zero denominators, class imbalance, ties, rank interpretation |
+| Reservoir sampling | Medium | — | [Python answer](./problems/classic_ml/reservoir_sampling.py) | — | Unknown stream length, uniform probability, O(k) memory |
+| TF-IDF | Medium | — | [Python answer](./problems/language_models/tfidf.py) | — | Token counts, document frequency, smoothing, sparse scaling |
 
-All canonical functions are in [`solutions/ml_algorithms.py`](./solutions/ml_algorithms.py).
+Each canonical question now owns one answer file under [`problems/`](./problems/).
 
 ## Additional classic algorithms
 

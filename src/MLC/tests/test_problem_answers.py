@@ -1,26 +1,43 @@
+"""Regression tests for the one-file-per-problem reference answers."""
+
+from __future__ import annotations
+
+from pathlib import Path
+import sys
 import unittest
 
 import numpy as np
 
-from ml_algorithms import (
-    best_gini_split,
+MLC_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(MLC_ROOT))
+
+from problems.classic_ml.binary_metrics_roc_auc import (  # noqa: E402
     binary_classification_metrics,
-    conv2d_valid,
-    cross_entropy_from_logits,
-    kmeans,
-    knn_predict,
-    linear_regression_gradient_descent,
-    logistic_regression_gradient_descent,
-    principal_component_analysis,
-    reservoir_sample,
     roc_auc,
-    scaled_dot_product_attention,
-    softmax,
-    tfidf,
 )
+from problems.classic_ml.conv2d import conv2d_valid  # noqa: E402
+from problems.classic_ml.decision_tree_split import best_gini_split  # noqa: E402
+from problems.classic_ml.kmeans import kmeans  # noqa: E402
+from problems.classic_ml.knn import knn_predict  # noqa: E402
+from problems.classic_ml.linear_regression import (  # noqa: E402
+    linear_regression_gradient_descent,
+)
+from problems.classic_ml.logistic_regression import (  # noqa: E402
+    logistic_regression_gradient_descent,
+)
+from problems.classic_ml.pca import principal_component_analysis  # noqa: E402
+from problems.classic_ml.reservoir_sampling import reservoir_sample  # noqa: E402
+from problems.classic_ml.softmax_cross_entropy import (  # noqa: E402
+    cross_entropy_from_logits,
+    softmax,
+)
+from problems.language_models.scaled_dot_product_attention import (  # noqa: E402
+    scaled_dot_product_attention,
+)
+from problems.language_models.tfidf import tfidf  # noqa: E402
 
 
-class MLAlgorithmsTest(unittest.TestCase):
+class ProblemAnswersTest(unittest.TestCase):
     def test_softmax_and_cross_entropy_are_stable(self):
         logits = np.array([[1_000.0, 1_001.0], [-1_000.0, -999.0]])
         probabilities = softmax(logits)
@@ -58,6 +75,7 @@ class MLAlgorithmsTest(unittest.TestCase):
             np.array([[0.0], [1.0], [2.0], [3.0]]), np.array([0, 0, 1, 1])
         )
         self.assertIsNotNone(split)
+        assert split is not None
         self.assertEqual(split[0], 0)
         self.assertAlmostEqual(split[1], 1.5)
         self.assertAlmostEqual(split[2], 0.0)
@@ -104,3 +122,4 @@ class MLAlgorithmsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
