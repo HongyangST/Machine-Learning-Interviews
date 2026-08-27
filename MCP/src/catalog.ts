@@ -23,12 +23,19 @@ const COMPANY_NAMES = [
   "Amazon",
   "Anthropic",
   "Apple",
+  "Databricks",
+  "DeepMind",
   "Google",
+  "LinkedIn",
   "Meta",
   "Microsoft",
+  "Midjourney",
   "Netflix",
   "OpenAI",
+  "Perplexity",
   "Roku",
+  "Uber",
+  "xAI",
 ];
 
 const SOLUTION_HEADING = /(?:reference response|solution|answer key)/i;
@@ -130,20 +137,29 @@ export function extractProblems(
       }
     }
 
-    if (context.some((title) => /Priority ML coding problems/i.test(title))) {
+    const priorityHeading = headings.find((heading) =>
+      /Priority ML coding problems/i.test(heading.title),
+    );
+    if (priorityHeading) {
       const cells = line.split("|").map((cell) => stripMarkdown(cell.trim())).filter(Boolean);
       if (
         cells.length >= 2 &&
         !/^Problem$/i.test(cells[0]) &&
-        !/^---/.test(line) &&
+        !/^---/.test(cells[0]) &&
         !/^All canonical/i.test(cells[0])
       ) {
         addProblem(problems, {
           title: cells[0],
-          prompt: `Implement ${cells[0]}. Discuss ${cells.at(-1) ?? "correctness and edge cases"}.`,
+          prompt: [
+            `Implement ${cells[0]}.`,
+            `Discuss ${cells.at(-1) ?? "correctness and edge cases"}.`,
+            `Difficulty: ${cells[1] ?? "unspecified"}.`,
+            `Tags: ${cells[2] ?? "unspecified"}.`,
+            `Companies: ${cells[3] ?? "none listed"}.`,
+          ].join(" "),
           sourcePath,
           sourceLine: index + 1,
-          sourceHeading: headings.at(-1)?.title ?? "Priority ML coding problems",
+          sourceHeading: priorityHeading.title,
           headingContext: context,
           sourceCommit,
         });
